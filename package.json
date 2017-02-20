@@ -1,0 +1,25 @@
+{
+  "name": "mfp-query",
+  "version": "1.0.0",
+  "description": "A simple api to query My Fitness Pal's food search database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-kennedy/mfp-query.git"
+  },
+  "author": "Sean Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-kennedy/mfp-query/issues"
+  },
+  "homepage": "https://github.com/sean-kennedy/mfp-query#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "he": "^1.1.1",
+    "request": "^2.79.0"
+  }
+}

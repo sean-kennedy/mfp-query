@@ -45,9 +45,10 @@ app.get('/', function(req, res) {
 
             var formattedItem = {},
                 description = $(item).find('.food_description'),
-                nutritionalInfo = $(item).find('.nutritional_info').html().replace(/\t/g, '').split('\n');
+                nutritionalInfo = $(item).find('.nutritional_info').html().replace(/\t/g, '').split('\n'),
+                name = description.find('a:nth-child(1)').html() + ' (' + description.find('a:nth-child(2)').html() + ')';
 
-            formattedItem.name = description.find('a:nth-child(1)').html() + ' (' + description.find('a:nth-child(2)').html() + ')';
+            formattedItem.name = he.decode(name);
 
             nutritionalInfo.forEach(function(infoItem) {
 

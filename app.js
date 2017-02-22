@@ -89,11 +89,11 @@ app.get('/', function(req, res) {
 
         results = trimSpaceStartEnd(results).split(' ');
 
+        resultObj.page = parseInt(page);
         resultObj.total = parseInt(results.pop());
         resultObj.num_results = formattedFoodList.length;
 
         responseObj.query = query;
-        responseObj.page = parseInt(page);
         responseObj.results = resultObj;
         responseObj.data = formattedFoodList;
 
